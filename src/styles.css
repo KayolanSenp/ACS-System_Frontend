@@ -1,0 +1,356 @@
+/* This is the CSS code that is used by the browser and html code to 
+style the front end of the webapp */
+
+/*this styles all the body tags in the html code and so is used to have a 
+general format of the body of the whole webapp:*/
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(9, 9, 9);
+    font-family: Arial, helvetica Neue, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*styles any header tags for the whole webapp to have the same allignment. colors, height, and padding*/
+header {
+    background: #bc8f8f;
+    padding: 20px;
+    text-align: center;
+    height: 325px;
+}
+
+/*this styles any a tags (link tags, in this case the logo of the ACSS) wihtin the 
+header tag in the html code and so is used to have a general format for width, height, 
+picture displayed, borders, and display styles, for this section in the whole webapp:*/
+header a {
+    background-image: url("images/Automated\ Covid\ Screening\ System.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    margin-right: 48px;
+    width: 200px;
+    display: inline-block;
+    height: 200px;
+    text-indent: -999999px;
+    top: -60px;
+    position: relative;
+    border: 10px solid white;
+    text-transform: uppercase;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+/*styles what happens when user hovers over any a tags (link tags in this case the logo of the ACSS) wihtin the header tag in the html code and so is used to have a 
+general format for this section in the whole webapp:*/
+header a:hover {
+    box-shadow: black 0 0 10px;
+}
+
+/*styles any unordered lists to not have bullet points when displyed for the whole webapp*/
+ul {
+    list-style-type: none;
+}
+
+/*styles any lists for the whole webapp*/
+li {
+    margin: 5px;
+    margin: 10px 0 10px 0;
+}
+
+/*general style to be applied to all seciton tags within the webapp*/
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58vh;
+    background: bisque;
+    font-size: 18px;
+}
+
+/*style to be applied to the container class within the div tag*/
+div.container {
+    width: 400px;
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    box-shadow: rosybrown 0 0 20px;
+    border-radius: 20px;
+    background: #d19d9d;
+    border : 6px dotted white;
+}
+
+/*applies specific fonts to the container, form_input, and form_button classes within the webapp*/
+.container, .form__input, .form__button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*the next 14 rules styles the index/login page*/
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 49px;
+}
+
+.form__input-group {
+    margin-bottom: 15px;
+}
+
+/*styles the input textboxes*/
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rosybrown;
+    outline: none;
+    background: rgb(144, 53, 53)  ;
+    transition: background 0.5s, border-color 0.3s;
+}
+
+/*styles input textboxes when they are selected*/
+.form__input:focus {
+    border-color: black ;
+    background-color: bisque;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/*styles the errors given if wrong inputs are entered*/
+.form__message--success {
+    color: green;
+}
+
+/*styles the errors given if wrong inputs are entered*/
+.form__message--error {
+    color: red;
+}
+
+/*styles the errors given if wrong inputs are entered*/
+.form__input--error {
+    color: red;
+    border-color: red;
+}
+
+.form__input-error-message {
+    font-size: 20px;
+    margin-top: 0.5rem;
+    color: red;
+}
+
+/*styles the login button*/
+.form__button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background-color: beige;
+    padding: 1rem 2rem;
+}
+
+.form__button a {
+    text-decoration: none;
+    color: black;
+}
+
+.form__button:active {
+    transform: scale(95%);
+}
+
+.form__button:hover {
+    background-color: bisque;
+    box-shadow: 0 0 5px black;
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    text-decoration: none;
+    cursor:pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+/*next 2 rules styles the live view page*/
+.livecontainer {
+    width: 720px;
+    max-width: 720px;
+    margin: 0 auto 0 auto;
+    padding: 2rem;
+    box-shadow: rosybrown 0 0 20px;
+    border-radius: 10px;
+    background: white;
+    border : 10px solid black;
+    height: 500px;
+}
+
+.live {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    height: 500px;
+}
+
+/*the following 6 style rules styles all the display aspects of the employee table page*/
+.tablecontainer {
+    margin: 0 auto 0 auto;
+    padding: 2rem;
+    box-shadow: rosybrown 0 0 20px;
+    border-radius: 10px;
+    background: white;
+    border : 10px solid black;
+    height: 500px;
+}
+
+/*styles the table class*/
+.table {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    height: 500px;
+}
+
+/*styles the table tag*/
+table {
+    background-color: #7c5d5d;
+}
+
+.top_row {
+    background-color: #bc8f8f;
+}
+
+tr {
+    background-color: beige;
+}
+
+th, td {
+    text-align: center;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+/*next 3 rules styles the buttons in the manual override page*/
+.hp-form__button.manual__button {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 35px;
+    background-color: yellow;
+}
+
+.back__button {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 18px;
+}
+
+.liback {
+    margin: auto;
+    width: 50%;
+    max-width: 100px;
+}
+
+/*styles the hubpage container containing the buttons*/
+.hpcontainer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rosybrown 0 0 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: 5px solid #d19d9d;
+}
+
+/*the 9 next rules styles the buttons that are used in the hubpage*/
+.hp-form__button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid rosybrown;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background-color: beige;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hp-form__button.manual__button:hover {
+    background-color: greenyellow;
+}
+
+.hp-form__button.back__button:hover {
+    background-color: rgb(224, 174, 174);
+}
+
+.hp-form__button a {
+    text-decoration: none;
+    color: black;
+}
+
+.hp-form__button:active {
+    transform: scale(95%);
+}
+
+.hp-form__button:hover {
+    background-color: bisque;
+    box-shadow: 0 0 5px black;
+}
+
+.logout__button {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 18px;
+}
+
+.hp-form__button.logout__button:hover {
+    background-color: red;
+}
+
+.lilogout {
+    margin: auto;
+    width: 50%;
+    max-width: 100px;
+}
+
+/*styles the footer tag for the whole webapp*/
+footer {
+    background: rgb(0, 0, 0);
+    padding: 4px 20px;
+    color: gray;
+    text-align: center;
+    height: auto;
+}
