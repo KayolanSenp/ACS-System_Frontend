@@ -13,7 +13,7 @@ function Login(){
         <header> 
             <nav>
                 <ul>
-                    <li class="logo"><a href="https://dazzling-pavlova-051a02.netlify.app">ACSS LOGO</a></li>
+                    <li class="logo"><a href="/">ACSS LOGO</a></li>
                 </ul>
             </nav>
         </header> 
@@ -30,7 +30,7 @@ function Login(){
                         <input type="password" class="form__input" autofocus placeholder="Password"/> 
                         <div class="form__input-error-message"></div>
                     </div>
-                    <button class="form__button" type="submit"><a href="https://dazzling-pavlova-051a02.netlify.app/hub">Login</a></button>
+                    <button class="form__button" type="submit"><a href="/hub">Login</a></button>
                    
                 </form>
             </div>
