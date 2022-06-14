@@ -8,25 +8,11 @@ import {useState, useEffect,useRef} from "react";
 
 function Viewemp() {
    
-const [employeesList,setemployeesList] = useState([]);
+
 const [logList,setlogList] = useState([]);
 const {current: arr} = useRef(logList)
      
-    const getemployee = async ()=>{
-
-        try {
-            const res = await fetch("https://acs-system-backend.herokuapp.com/employee");
-            const data = await res.json();
-            if (res.ok) {
-                setemployeesList(data);
-            }
-        
-        }
-        catch (err) {
-            console.log(err);
-        }
-        
-    };
+    
     const getLogs = async ()=>{
 
         try {
