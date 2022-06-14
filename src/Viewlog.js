@@ -52,7 +52,7 @@ const {current: arr} = useRef(logList)
               <header>
                   <nav>
                       <ul>
-                          <li class="logo"><a href="/hub">ACSS LOGO</a></li>
+                          <li class="logo"><a href="https://main--dazzling-pavlova-051a02.netlify.app/hub">ACSS LOGO</a></li>
                       </ul>
                   </nav>
               </header>

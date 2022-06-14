@@ -10,9 +10,9 @@ function App(){
     return(
     <div className="App">
         <Routes>
-            <Route exact path="/" element={<Login />} /> 
-            <Route exact path="/hub" element={<Hub />} />
-            <Route exact path="/logs" element={<Viewemp />} />
+            <Route exact path="https://main--dazzling-pavlova-051a02.netlify.app/" element={<Login />} /> 
+            <Route exact path="https://main--dazzling-pavlova-051a02.netlify.app/hub" element={<Hub />} />
+            <Route exact path="https://main--dazzling-pavlova-051a02.netlify.app/logs" element={<Viewemp />} />
         </Routes>
            
     </div>
