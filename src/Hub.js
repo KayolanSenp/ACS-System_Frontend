@@ -13,14 +13,14 @@ function Hub(){
         <header>
             <nav>
                 <ul>
-                    <li class="logo"><a href="/hub">ACSS LOGO</a></li>
+                    <li class="logo"><a href="https://dazzling-pavlova-051a02.netlify.app/hub">ACSS LOGO</a></li>
                 </ul>
             </nav>
         </header>
         <section>
             <ul class="hpcontainer">
                 <div class="move">
-                    <li><button class="hp-form__button" type="submit"><a href="/logs">View Employee Information</a></button></li>                    
+                    <li><button class="hp-form__button" type="submit"><a href="https://dazzling-pavlova-051a02.netlify.app/logs">View Employee Information</a></button></li>                    
                     <li class="lilogout"><button class="hp-form__button logout__button" type="submit"><a href="/">Log Out</a></button></li>
                 </div>
             </ul>
