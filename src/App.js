@@ -10,7 +10,7 @@ function App(){
     return(
     <div className="App">
         <Routes>
-            <Route exact path="https://dazzling-pavlova-051a02.netlify.app/" element={<Login />} /> 
+            <Route exact path="/" element={<Login />} /> 
             <Route exact path="https://dazzling-pavlova-051a02.netlify.app/hub" element={<Hub />} />
             <Route exact path="https://dazzling-pavlova-051a02.netlify.app/logs" element={<Viewemp />} />
         </Routes>
